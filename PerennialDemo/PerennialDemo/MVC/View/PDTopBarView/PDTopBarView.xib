@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PDTopBarView">
+            <connections>
+                <outlet property="_titleLabel" destination="IKf-Mw-I3u" id="R64-hk-2a8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nFL-no-FWN">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKf-Mw-I3u">
+                    <rect key="frame" x="278" y="27" width="43" height="29"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="0.87415540540000003" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uW0-Ls-Hv2">
+                    <rect key="frame" x="548" y="13" width="44" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Au4-2d-1Ck"/>
+                        <constraint firstAttribute="height" constant="44" id="dCT-fw-G1q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="1" alpha="0.87415540540000003" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onTapAddUser:" destination="-1" eventType="touchUpInside" id="cYM-4K-k4m"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.98039215690000003" green="0.28235294119999998" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uW0-Ls-Hv2" secondAttribute="bottom" constant="7" id="DAE-by-tIt"/>
+                <constraint firstItem="uW0-Ls-Hv2" firstAttribute="top" secondItem="nFL-no-FWN" secondAttribute="top" constant="13" id="Hvw-gJ-bKT"/>
+                <constraint firstAttribute="trailing" secondItem="uW0-Ls-Hv2" secondAttribute="trailing" constant="8" id="Zl5-8M-SvW"/>
+                <constraint firstItem="IKf-Mw-I3u" firstAttribute="centerX" secondItem="nFL-no-FWN" secondAttribute="centerX" id="fiP-Rq-ZX7"/>
+                <constraint firstItem="IKf-Mw-I3u" firstAttribute="centerY" secondItem="nFL-no-FWN" secondAttribute="centerY" constant="9.5" id="zej-5c-Tsj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="475" y="143"/>
+        </view>
+    </objects>
+</document>
